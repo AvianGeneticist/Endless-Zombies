@@ -40,6 +40,11 @@ mission "endless zombies gun shop"
 						"credits" >= 15000
 						"demonym light machine gun bought" == 0
 					goto Demonym
+				`	(Inspect the Baleful Buzzsaw.)`
+					to display
+						"credits" >= 17500
+						"baleful buzzsaw bought" == 0
+					goto BalefulBuzzsaw
 				`	(Inspect the Tiremon Shotgun.)`
 					to display
 						"credits" >= 12500
@@ -127,6 +132,26 @@ mission "endless zombies gun shop"
 				outfit "Demonym LMG" 1
 				set "demonym light machine gun bought"
 			`You hand over 15,000 credits for a Demonym LMG. Be sure to buy some ammunition!`
+			choice
+				`	(Keep shopping.)`
+					goto gunlist
+				`	(Leave.)`
+					goto end
+
+			label BalefulBuzzsaw
+			`The Baleful Buzzsaw is an LMG chambered in PDW rounds; it has low per-shot stopping power, but fires at a blistering rate with a deep magazine to boot.`
+			choice
+				`	(Buy the gun for 17,500 credits.)`
+					goto buybalefulbuzzsaw
+				`	(Return to the Gun List.)`
+					goto gunlist
+
+			label buybalefulbuzzsaw
+			action
+				payment -17500
+				outfit "Baleful Buzzsaw" 1
+				set "baleful buzzsaw bought"
+			`You hand over 17,500 credits for a Baleful Buzzsaw. Be sure to buy some ammunition!`
 			choice
 				`	(Keep shopping.)`
 					goto gunlist

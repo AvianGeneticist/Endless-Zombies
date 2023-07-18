@@ -279,21 +279,21 @@ outfit "Baleful Buzzsaw"
 		"hit effect" "blaster impact"
 		"target effect" "blood" 3
 		"ammo" "PDW Ammo (Intermediate)"
-		"inaccuracy" 12
+		"inaccuracy" 14
 		"velocity" 30
 		"lifetime" 28
-		"reload" 5.55
+		"reload" 6.6
 		"burst count" 200
 		"burst reload" 3
-		"shield damage" 40
-		"hull damage" 40
+		"shield damage" 35
+		"hull damage" 35
 		"damage dropoff" 100 700
 		"dropoff modifier" .6
 	description "A symbol of terror some decades ago, the Baleful Buzzsaw fires a fairly small bullet for an LMG, but outputs at a high rate of fire from a 200 round belt. It is, however, quite hard to control, with gradual but subtle damage dropoff."
 	description "Shots per Magazine: 200"
 	description "Rounds per Second: 20"
-	description "Reload Time: 8.5 seconds"
-	description "Damage: 40 -> 24"
+	description "Reload Time: 12 seconds"
+	description "Damage: 35 -> 21"
 	description "Dropoff Range: 100 -> 700"
 	description "Fire Type: Single Shot, One Projectile"
 
